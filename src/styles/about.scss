@@ -1,4 +1,17 @@
 .about {
     min-height: calc(100vh - 60px);
     background-color: $gray-100;
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about:first-child {
+    justify-content: stretch;
+}
+
+.about-info {
+    flex: 1;
+    align-self: stretch;
 }
