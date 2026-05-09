@@ -1,5 +1,5 @@
 .contact {
-    background-color: $primary-500;
+    background-color: $gray-500;
     min-height: calc(100vh - 60px);
     box-sizing: border-box;
     color: $gray-100; 
@@ -11,64 +11,50 @@
     flex: 1; 
     padding: 12px;
     margin: 12px;
-    box-shadow: 5px -5px 5px $primary-700; 
-    border-top: 1px solid $primary-300;
-    border-right: 1px solid $primary-300;
-    border-top-right-radius: 12px;
+
     button {
         background-color: $gray-100;
         color: $primary-500
     }
 }
 
-.contact-info{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $gray-300;
-    margin-top: auto;
-    position: relative;
-}
-
-.contact-info > div {
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex: 1; 
-    position: relative;
-    border: 2px solid $primary-500;
-    border-radius: 12px;
-    margin: 3px 12px; 
+    background-color: $gray-100;
 
+    div {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-900;
+        
+        p {
+            padding: 0px;
+            margin: 0px;
+            font-weight: 500;
+        }
+        
+        &:last-child {
+            padding-bottom: 24px;
 
-}
-
-.contact-info span {
-    display: block;
-    position: relative;
-}
-.contact-info i {
-    font-size: 3rem;
-    color: $primary-500;
-    text-shadow: 0px 4px 4px $gray-900; 
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 0; 
-    transform: translate(-50%, -70%);
-}
-
-.contact-info p {
-    color: $primary-500;
-    font-weight: 500;
-    white-space: nowrap;
-
-}
-
-.contact-info div p:first-of-type {
-    margin-top: 50px;
-    margin-bottom: 0px;
+        }
+        
+    }
+    
+    span {
+        font-weight: bolder;
+        color: $primary-500;
+        font-size: 3rem;
+        transition: font-size 0.2s ease-out;
+        position: relative;
+        top: 25px; 
+    }
+    span:hover {
+        font-size: 3.5rem;
+    }
 
 }
 
@@ -81,28 +67,6 @@
         position: relative;
 
 
-
-        .contact-info {
-            background-color: $gray-100;
-            box-shadow: 2px 2px 8px $gray-900;
-            margin-top: 0;
-            position: static;
-            width: 100%;
-            max-width: 400px;
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            gap: 28px; 
-            align-items: stretch;
-            border-radius: 12px;
-            padding: 8px;
-            margin-right: 32px;
-            &>div {
-                margin-top: 32px ;
-            }
-            
-        }
-        
         .contact-msg {
             background-color: $gray-100;
             box-shadow: 2px 2px 8px $gray-900;

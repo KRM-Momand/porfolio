@@ -64,8 +64,14 @@
 }
 
 .side-hero {
-    display: none;
+    display: block;
     background-color: $gray-100;
+
+}
+
+.carousel-item > img {
+    object-fit: cover;
+
 }
 
 

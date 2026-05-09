@@ -29,18 +29,21 @@ function Contact() {
       <div className='contact-info'>
         <div className='time'>
           <span><i className='bi bi-clock'></i></span>
+          <hr className='text-primary w-100 fw-bold'></hr>
           <p>Saturday & Sunday</p>
           <p>08:00 - 18:00</p>
         </div>
         <div className='phone'>
           <span><i className='bi bi-telephone'></i></span>
+          <hr className='text-primary w-100 fw-bold'></hr>
           <p>Cell Phone</p>
           <p>+49 (0) 15561 0079 71</p>
         </div>
         <div className='map'>
           <span><i className='bi bi-map'></i></span>
+          <hr className='text-primary w-100 fw-bold'></hr>
           <p>Germany </p>
-          <p>Sachsen</p>
+          <p>Zwickau, Sachsen</p>
         </div>
 
       </div>
