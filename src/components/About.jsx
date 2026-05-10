@@ -32,6 +32,13 @@ function About() {
               <li className='list-group-item'>C</li>
               <li className='list-group-item'>C++</li>
               <li className='list-group-item'> HTML /CSS /SCSS /Bootstrap </li>
+              <li className='list-group-item'> Javascript </li>
+              <li className='list-group-item'> React.js </li>
+              <li className='list-group-item'> Redux toolkit / Redux </li>
+              <li className='list-group-item'> Node.js </li>
+              <li className='list-group-item'> Express.js  </li>
+              <li className='list-group-item'> Socket.IO  </li>
+
             </ul>
           </div>
         </div>
