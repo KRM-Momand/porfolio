@@ -25,4 +25,13 @@
 .card {
     gap: 2rem; 
     box-shadow: 0px 4px 8px $gray-300;
+
+    .card-body h1 {
+        color: $primary-500;
+        font-weight: 600;
+    }
+    .card-body p {
+        color: $gray-500;
+        
+    }
 }

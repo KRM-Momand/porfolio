@@ -17,8 +17,8 @@ function Hero() {
           </div>
           <div className='hero-social'>
             <span> <i className='bi bi-github'> </i></span>
-            <span><a href='https://www.facebook.com/3dforlife' target='_blank'><i className='bi bi-facebook'> </i></a></span>
-            <span><a href='https://www.instagram.com/krm_momand' target='_blank'> <i className='bi bi-instagram'> </i> </a></span>
+            <span><a href='https://www.facebook.com/3dforlife' target='_blank'><i className='bi bi-facebook'></i></a></span>
+            <span><a href='https://www.instagram.com/krm_momand' target='_blank'><i className='bi bi-instagram'></i></a></span>
             <span> <i className='bi bi-tiktok'> </i></span>
             <span> <i className='bi bi-youtube'> </i></span>
           </div>
