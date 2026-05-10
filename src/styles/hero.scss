@@ -66,6 +66,7 @@
 .side-hero {
     display: block;
     background-color: $gray-100;
+    overflow: hidden;
 
 }
 
@@ -94,5 +95,9 @@
             padding-top: 28px;
 
         }
+    }
+
+    .side-hero {
+        display: none;
     }
 }

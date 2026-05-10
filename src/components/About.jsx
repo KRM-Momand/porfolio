@@ -40,7 +40,7 @@ function About() {
             <button className='accordion-button fw-bold text-primary' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='true' aria-controls='collapseTwo'> Design and 3D  </button>
           </h2>
           <div className='accordion-collapse collapse show' data-bs-parent='#accordion-about' id='collapseTwo'>
-            <ul className='accordion-body'>
+            <ul className='accordion-body list-group list-group-flush'>
               <li className='list-group-item'>Photoshop</li>
               <li className='list-group-item'>Illustrator</li>
               <li className='list-group-item'>After Effect</li>

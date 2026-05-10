@@ -8,7 +8,7 @@ function Hero() {
         <div className='main-hero'>
           <div className='picText'>
 
-            <img src='./myPic.jpeg' /> 
+            <img src='./myPic.jpg' /> 
             <div>
 
               <h1> Khalil Rahman M Momand</h1>
