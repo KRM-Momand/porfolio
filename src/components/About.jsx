@@ -25,7 +25,7 @@ function About() {
       <div className='accordion' id='accordion-about'>
         <div className='accordion-item'>
           <h2 className='accordion-header'>
-            <button className='accordion-button fw-bold text-primary' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'> Web Development </button>
+            <button className='accordion-button fw-bold text-primary' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'> Web Development & Programming </button>
           </h2>
           <div className='accordion-collapse collapse show' data-bs-parent='#accordion-about' id='collapseOne'>
             <ul className='accordion-body list-group list-group-flush'>
