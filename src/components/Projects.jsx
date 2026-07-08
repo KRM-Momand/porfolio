@@ -3,7 +3,7 @@ import '../styles/projects.scss';
 
 const projectData = [
   {id: 1, title: 'Imposter Game', desc: 'This Games is developed using React technology', img: './imposter.png' , link: 'https://imposter-lilac.vercel.app/'},
-  {id: 2, title: 'Chat App', desc: 'This app is a developed using React for frontend, express for backend and posgres for database ', img: './project01.png', link: 'https://auth-system-mu-azure.vercel.app/login'},
+  {id: 2, title: 'Chat App', desc: 'This app is a developed using React for frontend, express for backend and posgres for database ', img: './project01.png', link: 'https://auth-system-mu-azure.vercel.app'},
   {id: 3, title: 'Project', desc: 'I will write about it later', img: './project01.png', link: '#'},
 ]
 
