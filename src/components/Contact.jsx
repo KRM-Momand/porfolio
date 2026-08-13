@@ -486,7 +486,10 @@ function Contact() {
               </span>
 
               <a href="tel:+4915561007971">
-                +49 (0) 15561 0079 71
+                +49 (0) 15561 0079 71 (Whatsapp)
+              </a>
+              <a href="tel:+4915561007971">
+                +49 (0) 15565 510 930 (Direct Line)
               </a>
             </div>
           </div>
