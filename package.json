@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.2",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
+    "gsap": "^3.15.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "sass": "^1.99.0"
