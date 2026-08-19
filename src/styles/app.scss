@@ -1,0 +1,83 @@
+.app {
+  position: relative;
+
+  width: 100%;
+
+  overflow: clip;
+
+  background: $gray-100;
+}
+
+
+// ==============================================
+// SECTION WRAPPER
+// ==============================================
+
+.page-sections {
+  position: relative;
+
+  width: 100%;
+}
+
+
+// ==============================================
+// ALL SECTIONS
+// ==============================================
+
+.page-section {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  overflow: clip;
+
+  transform-origin: center top;
+
+  will-change:
+    transform,
+    opacity;
+}
+
+
+// ==============================================
+// HERO
+// ==============================================
+
+.hero-section {
+  z-index: 4;
+}
+
+
+// ==============================================
+// ABOUT
+// ==============================================
+
+.about-section {
+  z-index: 3;
+
+  margin-top: -1px;
+}
+
+
+// ==============================================
+// PROJECTS
+// ==============================================
+
+.projects-section {
+  z-index: 2;
+
+  margin-top: -1px;
+}
+
+
+// ==============================================
+// CONTACT
+// ==============================================
+
+.contact-section {
+  z-index: 1;
+
+  margin-top: -1px;
+}

@@ -10,17 +10,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const slides = [
   {
-    image: './slide01.jpg',
+    image: './slide01.avif',
     number: '01',
     title: 'CREATIVE',
   },
   {
-    image: './slide02.jpg',
+    image: './slide02.avif',
     number: '02',
     title: 'DIGITAL',
   },
   {
-    image: './slide03.jpg',
+    image: './slide03.avif',
     number: '03',
     title: 'EXPERIENCE',
   },
@@ -61,10 +61,6 @@ function Hero() {
   const isAnimating = useRef(false);
   const carouselTimer = useRef(null);
 
-  // ==================================================
-  // MAIN HERO ANIMATION
-  // ==================================================
-
   useGSAP(
     () => {
       const hero = heroRef.current;
@@ -76,10 +72,6 @@ function Hero() {
           ease: 'power4.out',
         },
       });
-
-      // ------------------------------------------------
-      // INITIAL STATES
-      // ------------------------------------------------
 
       gsap.set('.hero-grid-line', {
         scaleY: 0,
@@ -127,10 +119,6 @@ function Hero() {
         opacity: 0,
       });
 
-      // ------------------------------------------------
-      // GRID
-      // ------------------------------------------------
-
       intro.to(
         '.hero-grid-line',
         {
@@ -141,10 +129,6 @@ function Hero() {
         },
         0
       );
-
-      // ------------------------------------------------
-      // IMAGE
-      // ------------------------------------------------
 
       intro.to(
         '.hero-image-mask',
@@ -165,10 +149,6 @@ function Hero() {
         },
         0.1
       );
-
-      // ------------------------------------------------
-      // IMAGE OVERLAY
-      // ------------------------------------------------
 
       intro.to(
         '.hero-image-overlay',
@@ -191,10 +171,7 @@ function Hero() {
         1.4
       );
 
-      // ------------------------------------------------
-      // NAME
-      // ------------------------------------------------
-
+ 
       intro.to(
         '.hero-name-word',
         {
@@ -205,10 +182,6 @@ function Hero() {
         },
         0.7
       );
-
-      // ------------------------------------------------
-      // ROLE
-      // ------------------------------------------------
 
       intro.to(
         '.hero-role-line',
@@ -221,10 +194,7 @@ function Hero() {
         1.15
       );
 
-      // ------------------------------------------------
-      // META
-      // ------------------------------------------------
-
+ 
       intro.to(
         '.hero-meta > *',
         {
@@ -236,10 +206,7 @@ function Hero() {
         1.2
       );
 
-      // ------------------------------------------------
-      // SOCIAL
-      // ------------------------------------------------
-
+ 
       intro.to(
         '.hero-social-item',
         {
@@ -251,9 +218,6 @@ function Hero() {
         1.4
       );
 
-      // ------------------------------------------------
-      // SCROLL
-      // ------------------------------------------------
 
       intro.to(
         '.hero-scroll',
@@ -265,10 +229,6 @@ function Hero() {
         1.7
       );
 
-      // ------------------------------------------------
-      // COUNTER
-      // ------------------------------------------------
-
       intro.to(
         '.hero-counter',
         {
@@ -278,10 +238,6 @@ function Hero() {
         },
         1.7
       );
-
-      // =================================================
-      // SCROLL EXIT
-      // =================================================
 
       const scrollTl = gsap.timeline({
         scrollTrigger: {
@@ -352,9 +308,6 @@ function Hero() {
     }
   );
 
-  // ==================================================
-  // MOUSE PARALLAX
-  // ==================================================
 
   useEffect(() => {
     const hero = heroRef.current;
@@ -410,9 +363,6 @@ function Hero() {
     };
   }, []);
 
-  // ==================================================
-  // MAGNETIC SOCIAL ICONS
-  // ==================================================
 
   const handleSocialMove = (e) => {
     const element = e.currentTarget;
@@ -445,10 +395,6 @@ function Hero() {
       ease: 'elastic.out(1, 0.4)',
     });
   };
-
-  // ==================================================
-  // SLIDE TRANSITION
-  // ==================================================
 
   const goToSlide = (index, direction = 1) => {
     if (isAnimating.current) return;
@@ -577,10 +523,6 @@ function Hero() {
     });
   };
 
-  // ==================================================
-  // NEXT SLIDE
-  // ==================================================
-
   const nextSlide = () => {
     const next =
       (currentSlide.current + 1) %
@@ -588,10 +530,6 @@ function Hero() {
 
     goToSlide(next, 1);
   };
-
-  // ==================================================
-  // PREVIOUS SLIDE
-  // ==================================================
 
   const previousSlide = () => {
     const previous =
@@ -601,9 +539,6 @@ function Hero() {
     goToSlide(previous, -1);
   };
 
-  // ==================================================
-  // AUTOPLAY
-  // ==================================================
 
   useEffect(() => {
     carouselTimer.current =
@@ -616,9 +551,6 @@ function Hero() {
     };
   }, []);
 
-  // ==================================================
-  // KEYBOARD
-  // ==================================================
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -644,19 +576,12 @@ function Hero() {
     };
   }, []);
 
-  // ==================================================
-  // JSX
-  // ==================================================
-
   return (
     <section
       className="hero"
       id="home"
       ref={heroRef}
     >
-      {/* =================================================
-          BACKGROUND
-      ================================================= */}
 
       <div className="hero-background">
         <div className="hero-bg-word">
@@ -674,9 +599,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* =================================================
-          TOP BAR
-      ================================================= */}
 
       <header className="hero-top">
         <span className="hero-logo">
@@ -692,10 +614,6 @@ function Hero() {
           Available for work
         </span>
       </header>
-
-      {/* =================================================
-          SOCIAL
-      ================================================= */}
 
       <aside className="hero-social">
         {socials.map((social) => (
@@ -714,14 +632,8 @@ function Hero() {
         ))}
       </aside>
 
-      {/* =================================================
-          MAIN
-      ================================================= */}
 
       <main className="hero-main">
-        {/* ===============================================
-            NAME
-        ================================================ */}
 
         <div className="hero-name">
           <div className="hero-name-mask">
@@ -742,10 +654,6 @@ function Hero() {
             </h1>
           </div>
         </div>
-
-        {/* ===============================================
-            IMAGE
-        ================================================ */}
 
         <div className="hero-image-wrap">
           <div className="hero-image-shadow" />
@@ -789,10 +697,6 @@ function Hero() {
           <div className="hero-image-overlay" />
         </div>
 
-        {/* ===============================================
-            ROLE
-        ================================================ */}
-
         <div className="hero-role">
           <div className="hero-role-mask">
             <p className="hero-role-line">
@@ -813,10 +717,6 @@ function Hero() {
           </div>
         </div>
 
-        {/* ===============================================
-            META
-        ================================================ */}
-
         <div className="hero-meta">
           <span>
             Creative
@@ -831,10 +731,6 @@ function Hero() {
           </span>
         </div>
       </main>
-
-      {/* =================================================
-          SLIDER CONTROLS
-      ================================================= */}
 
       <div className="hero-controls">
         <button
@@ -868,10 +764,6 @@ function Hero() {
         </button>
       </div>
 
-      {/* =================================================
-          SCROLL
-      ================================================= */}
-
       <div className="hero-scroll">
         <div className="hero-scroll-circle">
           <svg viewBox="0 0 100 100">
@@ -900,10 +792,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* =================================================
-          BOTTOM
-      ================================================= */}
-
       <footer className="hero-bottom">
         <span>
           Portfolio / 2026
@@ -913,10 +801,6 @@ function Hero() {
           Scroll to explore
         </span>
       </footer>
-
-      {/* =================================================
-          GRAIN
-      ================================================= */}
 
       <div className="hero-noise" />
     </section>
